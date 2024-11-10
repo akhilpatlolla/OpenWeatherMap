@@ -1,0 +1,114 @@
+{
+  "version": "38.0.1",
+  "artifacts": {
+    "WeatherAppStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "WeatherAppStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "WeatherAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "WeatherAppStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "notificationArns": [],
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cc3b4436db5eaeb609b15ee921e5693fffc4ca9b79014e9dfa1057c5f1c198be.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "WeatherAppStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "WeatherAppStack.assets"
+      ],
+      "metadata": {
+        "/WeatherAppStack/openWeatherParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "openWeatherParameter6C274A6E"
+          }
+        ],
+        "/WeatherAppStack/aws-cli-bash-python/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsclibashpython5E3F95DA"
+          }
+        ],
+        "/WeatherAppStack/matplotlib-layer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "matplotliblayerE6338969"
+          }
+        ],
+        "/WeatherAppStack/lambda-service-role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaservicerole34E512C8"
+          }
+        ],
+        "/WeatherAppStack/WeatherForecase/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WeatherForecaseA84DB818"
+          }
+        ],
+        "/WeatherAppStack/Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rule4C995B7F"
+          }
+        ],
+        "/WeatherAppStack/Rule/AllowEventRuleWeatherAppStackWeatherForecase08035E87": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RuleAllowEventRuleWeatherAppStackWeatherForecase08035E875713749D"
+          }
+        ],
+        "/WeatherAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/WeatherAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/WeatherAppStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/WeatherAppStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "WeatherAppStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

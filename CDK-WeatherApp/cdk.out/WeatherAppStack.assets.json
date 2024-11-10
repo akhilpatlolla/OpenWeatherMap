@@ -1,0 +1,58 @@
+{
+  "version": "38.0.1",
+  "files": {
+    "44edf579f91703e9c70ee2f837f1c635a0740d4dd5862dcb4f405b4b493c816a": {
+      "source": {
+        "path": "asset.44edf579f91703e9c70ee2f837f1c635a0740d4dd5862dcb4f405b4b493c816a.zip",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "44edf579f91703e9c70ee2f837f1c635a0740d4dd5862dcb4f405b4b493c816a.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "7644f1da7085b4fd2d50b47c7d73a42fa3ed486ab98bb777610cf932f08df72f": {
+      "source": {
+        "path": "asset.7644f1da7085b4fd2d50b47c7d73a42fa3ed486ab98bb777610cf932f08df72f.zip",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "7644f1da7085b4fd2d50b47c7d73a42fa3ed486ab98bb777610cf932f08df72f.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "c13e0195e8239a30baaa38d116574d4307bbfc021c5bca4b3677e6f4ff1835bd": {
+      "source": {
+        "path": "asset.c13e0195e8239a30baaa38d116574d4307bbfc021c5bca4b3677e6f4ff1835bd",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "c13e0195e8239a30baaa38d116574d4307bbfc021c5bca4b3677e6f4ff1835bd.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "cc3b4436db5eaeb609b15ee921e5693fffc4ca9b79014e9dfa1057c5f1c198be": {
+      "source": {
+        "path": "WeatherAppStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "cc3b4436db5eaeb609b15ee921e5693fffc4ca9b79014e9dfa1057c5f1c198be.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

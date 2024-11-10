@@ -1,0 +1,13 @@
+{
+  "bucket_name": "riding-videos-tony",
+  "key": "openweathermap/",
+  "AWS_REGION": "us-west-2",
+  "SENDER": "patlolla.akhil@gmail.com",
+  "RECIPIENT": "patlolla.akhil@gmail.com",
+  "SUBJECT": "OpenWeatherMap",
+  "BODY_TEXT": "OpenWeatherMap - Reports",
+  "CHARSET": "UTF-8",
+  "api_key": "9c62136e546fb2e37abb9e18a138a113",
+  "base_url": "http://api.openweathermap.org/data/2.5/forecast?",
+  "s3_url": "https://riding-videos-tony.s3.us-west-2.amazonaws.com/openweathermap"
+}
