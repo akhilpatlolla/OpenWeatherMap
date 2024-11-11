@@ -35,7 +35,7 @@ The workflow is automated through an EventBridge rule to trigger Lambda at set i
 ## Scripts :
 * [index.py](Submissions/index.py)
 * [akhil_send_weather_report_email.ipynb](Submissions/akhil_send_weather_report_email.ipynb)
-* [weather_app-stack.ts](WeatherApp/lib/weather_app-stack.ts)
+* [weather_app-stack.ts](CDK-WeatherApp/lib/weather_app-stack.ts)
 
 
 
