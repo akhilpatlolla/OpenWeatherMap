@@ -7,8 +7,11 @@ This repository provides a streamlined solution for accessing the OpenWeatherMap
 The project also leverages the AWS CDK Toolkit for efficient infrastructure deployment, utilizing CloudFormation stacks to create and manage required AWS resources:
 
 **SSM Parameters**: Stores configuration details for secure parameter management.
+
 **Execution Roles and Policies**: Configures IAM roles and policies to enable Lambda access to S3, SSM, and SES resources.
+
 **Lambda Layers**: Packages essential libraries (such as pandas, matplotlib, and requests) to support data processing and visualization in Lambda functions.
+
 **Lambda Function**: This core function sends requests to the OpenWeatherMap API based on specified latitude and longitude, processes the response data, and creates graphical representations of the forecasted weather.
 
 The workflow is automated through an EventBridge rule to trigger Lambda at set intervals. This Lambda function generates the necessary graphs and analysis, which are then sent via Amazon SES as visually rich emails to the specified recipients.
