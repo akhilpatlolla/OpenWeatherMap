@@ -16,7 +16,7 @@ The project also leverages the AWS CDK Toolkit for efficient infrastructure depl
 
 The workflow is automated through an EventBridge rule to trigger Lambda at set intervals. This Lambda function generates the necessary graphs and analysis, which are then sent via Amazon SES as visually rich emails to the specified recipients.
 
-** NOTE : Verify the email used ahead of time on the Amazon SES **
+**NOTE : Verify the email used ahead of time on the Amazon SES**
 
 ## Prerequisites
 * Python 3.x installed, with the following packages:
